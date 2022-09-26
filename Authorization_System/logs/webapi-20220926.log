@@ -1,0 +1,32 @@
+[2022-09-26 15:25:37.860 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-26 15:25:38.753 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-26 15:25:38.754 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-26 15:25:38.754 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-26 15:25:38.754 +06:00  INF]  Hosting environment: Development
+[2022-09-26 15:25:38.754 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-26 15:25:41.969 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-26 15:25:42.907 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-26 15:25:42.927 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 17.5622ms
+[2022-09-26 15:25:42.945 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 984.3481ms
+[2022-09-26 15:25:43.654 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-26 15:25:44.071 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 417.2625ms
+[2022-09-26 15:30:37.286 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-26 15:30:38.391 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-26 15:30:38.391 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-26 15:30:38.391 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-26 15:30:38.420 +06:00  INF]  Hosting environment: Development
+[2022-09-26 15:30:38.420 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-26 15:30:39.962 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-26 15:30:40.832 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-26 15:30:40.846 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 10.4687ms
+[2022-09-26 15:30:40.861 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 909.4668ms
+[2022-09-26 15:30:41.532 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-26 15:30:41.795 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 263.6059ms
+[2022-09-26 15:31:06.239 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/WeatherForecast - -
+[2022-09-26 15:31:06.256 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.WeatherForecastController.Get (Authorization_System.API)'
+[2022-09-26 15:31:06.277 +06:00  INF]  Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Authorization_System.API.WeatherForecast] Get() on controller Authorization_System.API.Controllers.WeatherForecastController (Authorization_System.API).
+[2022-09-26 15:31:06.280 +06:00  INF]  Weather Forecast executing...
+[2022-09-26 15:31:06.295 +06:00  INF]  Executing ObjectResult, writing value of type 'Authorization_System.API.WeatherForecast[]'.
+[2022-09-26 15:31:06.316 +06:00  INF]  Executed action Authorization_System.API.Controllers.WeatherForecastController.Get (Authorization_System.API) in 30.9865ms
+[2022-09-26 15:31:06.318 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.WeatherForecastController.Get (Authorization_System.API)'
+[2022-09-26 15:31:06.318 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/WeatherForecast - - - 200 - application/json;+charset=utf-8 79.6004ms

@@ -1,11 +1,17 @@
+using Authorization_System.API.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Authorization_System.API.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+    [Authorize(Roles =UserRoles.Admin)]
+    [Route("api/[controller]")]
+    //[ApiController, Authorize(Policy = "ViewTestPage")]
+    [EnableCors("AllowSites")]
     public class WeatherForecastController : ControllerBase
     {
+
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
