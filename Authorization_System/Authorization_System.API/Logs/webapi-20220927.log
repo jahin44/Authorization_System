@@ -833,3 +833,101 @@ WHERE [a].[UserId] = @__userId_0
 [2022-09-27 13:36:55.903 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 7117.3567ms
 [2022-09-27 13:36:55.906 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
 [2022-09-27 13:36:55.924 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 52 - 200 - application/json;+charset=utf-8 7897.4207ms
+[2022-09-27 16:06:10.364 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-27 16:06:10.950 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-27 16:06:10.950 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-27 16:06:10.950 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-27 16:06:10.950 +06:00  INF]  Hosting environment: Development
+[2022-09-27 16:06:10.950 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-27 16:06:13.797 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-27 16:06:14.527 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-27 16:06:14.540 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 748.3922ms
+[2022-09-27 16:06:14.540 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 10.5844ms
+[2022-09-27 16:06:15.326 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-27 16:06:15.637 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 310.9314ms
+[2022-09-27 16:07:42.008 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 52
+[2022-09-27 16:07:42.018 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-27 16:07:42.869 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:07:42.924 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-27 16:08:05.003 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-27 16:08:10.652 +06:00  INF]  Executed DbCommand (265ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-27 16:08:19.631 +06:00  INF]  Executed DbCommand (55ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+[2022-09-27 16:09:20.532 +06:00  INF]  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2022-09-27 16:09:20.611 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 97679.7244ms
+[2022-09-27 16:09:20.612 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:09:20.627 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 52 - 200 - application/json;+charset=utf-8 98619.7567ms
+[2022-09-27 16:09:28.773 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 52
+[2022-09-27 16:09:28.776 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-27 16:09:28.777 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:09:28.778 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-27 16:09:42.007 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-27 16:09:42.017 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-27 16:09:42.034 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+[2022-09-27 16:09:42.035 +06:00  INF]  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2022-09-27 16:09:42.035 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 13256.8354ms
+[2022-09-27 16:09:42.035 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:09:42.036 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 52 - 200 - application/json;+charset=utf-8 13263.1265ms
+[2022-09-27 16:09:57.689 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 41
+[2022-09-27 16:09:57.690 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-27 16:09:57.690 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:09:57.690 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-27 16:10:03.375 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-27 16:10:03.406 +06:00  INF]  Executed DbCommand (30ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-27 16:10:23.770 +06:00  INF]  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2022-09-27 16:10:23.803 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 26112.8684ms
+[2022-09-27 16:10:23.803 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:10:23.803 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 41 - 200 - application/json;+charset=utf-8 26114.3778ms
+[2022-09-27 16:13:35.346 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-27 16:13:36.089 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-27 16:13:36.090 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-27 16:13:36.090 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-27 16:13:36.090 +06:00  INF]  Hosting environment: Development
+[2022-09-27 16:13:36.090 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-27 16:13:38.619 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-27 16:13:39.400 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-27 16:13:39.405 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 788.7171ms
+[2022-09-27 16:13:39.422 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 21.5975ms
+[2022-09-27 16:13:40.249 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-27 16:13:40.508 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 258.6701ms
+[2022-09-27 16:14:57.593 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 47
+[2022-09-27 16:14:57.616 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-27 16:14:57.769 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:14:57.823 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-27 16:15:38.763 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-27 16:15:44.046 +06:00  INF]  Executed DbCommand (241ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-27 16:16:06.425 +06:00  INF]  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[2022-09-27 16:16:06.450 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 68610.6933ms
+[2022-09-27 16:16:06.453 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-27 16:16:06.473 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 47 - 401 - application/problem+json;+charset=utf-8 68877.4007ms
+[2022-09-27 16:17:38.535 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-27 16:17:39.412 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-27 16:17:39.412 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-27 16:17:39.412 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-27 16:17:39.413 +06:00  INF]  Hosting environment: Development
+[2022-09-27 16:17:39.413 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-27 16:17:40.723 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-27 16:17:41.522 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 802.7097ms
+[2022-09-27 16:17:41.554 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-27 16:17:41.566 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 11.6774ms
+[2022-09-27 16:17:42.122 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-27 16:17:42.492 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 376.7791ms

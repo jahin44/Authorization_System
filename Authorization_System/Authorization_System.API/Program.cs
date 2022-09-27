@@ -10,6 +10,7 @@ using Serilog;
 using Serilog.Events;
 using System.Reflection;
 using System.Text;
+using Authorization_System.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,9 +22,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 {
-    //containerBuilder.RegisterModule(new ApiModule());
-    //containerBuilder.RegisterModule(new MembershipModule(connectionString, assemblyName));
-    //containerBuilder.RegisterModule(new TrainingModule(connectionString, assemblyName));
+     containerBuilder.RegisterModule(new AuthorizationDependencyModule());
+     
 });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
