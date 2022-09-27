@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Authorization_System.API.Repositories;
 
 namespace Authorization_System.API.Services
 {
@@ -10,11 +11,14 @@ namespace Authorization_System.API.Services
     {
         private readonly IConfiguration _configuration;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IApplicationUserRepository _userRepository;
 
-        public ApplicationUserService(IConfiguration configuration, UserManager<IdentityUser> userManager)
+        public ApplicationUserService(IConfiguration configuration, UserManager<IdentityUser> userManager
+                                       ,IApplicationUserRepository userRepository)
         {
             _configuration = configuration;
             _userManager = userManager;
+            _userRepository = userRepository;
         }
         public async Task<List<Claim>>  Login(LoginModel model)
         {
@@ -41,6 +45,30 @@ namespace Authorization_System.API.Services
             }
 
             
+        }
+
+        public async Task<string> Register(RegisterModel model)
+        {
+            if (model != null)
+            {
+                var userExists = await _userManager.FindByNameAsync(model.Username);
+                if (userExists != null)
+                    return "Already exists";
+                IdentityUser user = new()
+                {
+                    Email = model.Email,
+                    SecurityStamp = Guid.NewGuid().ToString(),
+                    UserName = model.Username
+                };
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    return "Success";
+                }
+
+            }
+
+            return "Error";
         }
     }
 }

@@ -56,21 +56,41 @@ namespace Authorization_System.API.Controllers
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            var userExists = await _userManager.FindByNameAsync(model.Username);
-            if (userExists != null)
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
-
-            IdentityUser user = new()
+            if (ModelState.IsValid)
             {
-                Email = model.Email,
-                SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
-            };
-            var result = await _userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
+                var result = await _applicationUserService.Register(model);
+                
+                if (result != null)
+                {
+                    if (result == "Error")
+                    {
+                        return StatusCode(StatusCodes.Status500InternalServerError,
+                            new Response
+                            {
+                                Status = "Error",
+                                Message = "User creation failed! Please check user details and try again."
+                            });
+                    }
+                    else if (result == "Already exists")
+                    {
+                        return StatusCode(StatusCodes.Status500InternalServerError,
+                            new Response { Status = "Error", Message = "User already exists!" });
 
-            return Ok(new Response { Status = "Success", Message = "User created successfully!" });
+                    }
+                    else if (result == "Success")
+                    {
+                        return Ok(new Response { Status = "Success", Message = "User created successfully!" });
+                    }
+
+                }
+                
+            }
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                new Response
+                {
+                    Status = "Error",
+                    Message = "User creation failed! Please check user details and try again."
+                });
         }
 
         [HttpPost]
