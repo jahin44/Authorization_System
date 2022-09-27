@@ -8,17 +8,19 @@ using Authorization_System.API.Repositories;
 namespace Authorization_System.API.Services
 {
     public class ApplicationUserService : IApplicationUserService
-    {
-        private readonly IConfiguration _configuration;
+    { 
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IApplicationUserRepository _userRepository;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public ApplicationUserService(IConfiguration configuration, UserManager<IdentityUser> userManager
-                                       ,IApplicationUserRepository userRepository)
+        public ApplicationUserService(  UserManager<IdentityUser> userManager,
+                                       IApplicationUserRepository userRepository,
+                                       RoleManager<IdentityRole> roleManager)
         {
-            _configuration = configuration;
-            _userManager = userManager;
+             _userManager = userManager;
+            _roleManager = roleManager;
             _userRepository = userRepository;
+            
         }
         public async Task<List<Claim>>  Login(LoginModel model)
         {
@@ -70,5 +72,7 @@ namespace Authorization_System.API.Services
 
             return "Error";
         }
+        
+
     }
 }

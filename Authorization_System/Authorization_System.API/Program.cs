@@ -11,6 +11,7 @@ using Serilog.Events;
 using System.Reflection;
 using System.Text;
 using Authorization_System.API;
+using Authorization_System.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -77,12 +78,19 @@ try
 
     var app = builder.Build();
 
+    app.Services.GetAutofacRoot();
+    var dataSeed = new DataSeed();
+    dataSeed.Resolve(app.Services.GetAutofacRoot());
+    await dataSeed.SeedAdminAsync();
+
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+
+    
 
     app.UseHttpsRedirection();
 
