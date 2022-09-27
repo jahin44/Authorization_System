@@ -1,7 +1,7 @@
 ﻿namespace Authorization_System.DataAccessLayer
 {
-    public class Class1
+    public interface IEntity<T>
     {
-
+        T Id { get; set; }
     }
 }
