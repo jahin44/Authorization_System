@@ -8,22 +8,26 @@ using Authorization_System.API.Repositories;
 namespace Authorization_System.API.Services
 {
     public class ApplicationUserService : IApplicationUserService
-    { 
+    {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IApplicationUserRepository _userRepository;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public ApplicationUserService(  UserManager<IdentityUser> userManager,
+        public ApplicationUserService(UserManager<IdentityUser> userManager,
                                        IApplicationUserRepository userRepository,
                                        RoleManager<IdentityRole> roleManager)
         {
-             _userManager = userManager;
+            _userManager = userManager;
             _roleManager = roleManager;
             _userRepository = userRepository;
-            
+
         }
-        public async Task<List<Claim>>  Login(LoginModel model)
+        public async Task<List<Claim>> Login(LoginModel model)
         {
+            if (model == null)
+            {
+                throw new FileNotFoundException("model can not be empty");
+            }
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
@@ -46,33 +50,35 @@ namespace Authorization_System.API.Services
                 return null;
             }
 
-            
+
         }
 
         public async Task<string> Register(RegisterModel model)
         {
-            if (model != null)
+            if (model == null)
             {
-                var userExists = await _userManager.FindByNameAsync(model.Username);
-                if (userExists != null)
-                    return "Already exists";
-                IdentityUser user = new()
-                {
-                    Email = model.Email,
-                    SecurityStamp = Guid.NewGuid().ToString(),
-                    UserName = model.Username
-                };
-                var result = await _userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    return "Success";
-                }
-
+                throw new FileNotFoundException("Register Model Can not null");
             }
-
-            return "Error";
+            
+            var userExists = await _userManager.FindByNameAsync(model.Username);
+            if (userExists != null)
+                return "Already exists";
+            IdentityUser user = new()
+            {
+                Email = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = model.Username
+            };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                return "Success";
+            }
+            else
+            {
+                return "Error";
+            }
         }
-        
 
     }
 }

@@ -18,12 +18,6 @@ namespace Authorization_System.API.Repositories.Base
         {
              _dbSet.AddAsync(entity);
         }
-
-        public virtual IList<TEntity> Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> expression, string includeProperties = "")
-        {
-            throw new NotImplementedException();
-        }
-
         public virtual IList<TEntity> GetAll()
         {
             return _dbSet.ToList();

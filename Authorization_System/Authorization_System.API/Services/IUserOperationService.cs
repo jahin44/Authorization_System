@@ -8,7 +8,7 @@ namespace Authorization_System.API.Services
         List<IdentityUser> GetAll();
         IdentityUser GetById(Guid Id);
         void Remove(Guid Id);
-        void Update(User user);
+        Task<string> Update(User user);
         
 
     }

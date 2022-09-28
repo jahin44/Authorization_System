@@ -40,7 +40,7 @@ namespace Authorization_System.API.Controllers
         {
             try
             {
-                if (Id == Guid.Empty)
+                if (Id != Guid.Empty)
                 {
                     _userOperationService.Remove(Id);
                     return Ok(new Response { Status = "Success", Message = "User created successfully!" });
@@ -60,15 +60,15 @@ namespace Authorization_System.API.Controllers
         }
 
         [HttpPost]
-        [Route("UpdateeUser")]
-        public IActionResult UpdateUser(User user)
+        [Route("UpdateUser")]
+        public async Task<IActionResult> UpdateUser(User user)
         {
             try
             {
                 if (user != null)
                 {
-                    _userOperationService.Update(user);
-                    return Ok(new Response { Status = "Success", Message = "User created successfully!" });
+                     var result =await _userOperationService.Update(user);
+                    return Ok(new Response { Status = result });
                 }
                 else
                 {
