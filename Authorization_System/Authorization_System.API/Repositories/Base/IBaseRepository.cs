@@ -11,6 +11,7 @@ namespace Authorization_System.API.Repositories.Base
         IList<TEntity> GetAll();
         //Task<TEntity> FindByNameAsync(string name);
         TEntity GetById(Guid Id);
-
+        void Update(TEntity entity);
+ 
     }
 }

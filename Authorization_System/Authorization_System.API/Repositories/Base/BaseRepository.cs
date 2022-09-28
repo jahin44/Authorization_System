@@ -14,36 +14,44 @@ namespace Authorization_System.API.Repositories.Base
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
         }
-        public void AddAsync(TEntity entity)
+        public virtual void AddAsync(TEntity entity)
         {
              _dbSet.AddAsync(entity);
         }
 
-        //public Task<TEntity> FindByNameAsync(string name)
-        //{
-
-        //    return _dbSet.FindByNameAsync(name);
-            
-        //}
-
-        public IList<TEntity> Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> expression, string includeProperties = "")
+        public virtual IList<TEntity> Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> expression, string includeProperties = "")
         {
             throw new NotImplementedException();
         }
 
-        public IList<TEntity> GetAll()
+        public virtual IList<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return _dbSet.ToList();
         }
 
-        public TEntity GetById(Guid Id)
+        public virtual TEntity GetById(Guid Id)
         {
-            throw new NotImplementedException();
+           return _dbSet.Find( Id);
         }
 
-        public void Remove(TEntity entityToDelete)
+        public virtual void Remove(TEntity entityToDelete)
         {
-            throw new NotImplementedException();
+            if (_dbContext.Entry(entityToDelete).State == EntityState.Detached)
+            {
+                _dbSet.Attach(entityToDelete);
+            }
+            _dbSet.Remove(entityToDelete);
+            _dbContext.SaveChanges();
+        }
+
+        public void Update(TEntity entity)
+        {
+            if(_dbContext.Entry(entity).State == EntityState.Detached)
+            {
+                _dbSet.Attach(entity);
+            }
+            _dbSet.Update(entity);
+            _dbContext.SaveChanges();
         }
     }
 }

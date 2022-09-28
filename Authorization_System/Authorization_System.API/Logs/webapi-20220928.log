@@ -266,3 +266,670 @@ WHERE [a].[UserId] = @__userId_0
 [2022-09-28 00:56:28.437 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 42.9982ms
 [2022-09-28 00:56:28.437 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
 [2022-09-28 00:56:28.437 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50 - 200 - application/json;+charset=utf-8 51.0665ms
+[2022-09-28 11:49:40.146 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 11:49:41.956 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:49:45.675 +06:00  INF]  Executed DbCommand (383ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 11:49:50.111 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 11:49:50.111 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 11:49:50.112 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 11:49:50.112 +06:00  INF]  Hosting environment: Development
+[2022-09-28 11:49:50.112 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 11:49:52.514 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 11:49:53.741 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 11:49:53.764 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 20.5442ms
+[2022-09-28 11:49:53.768 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 1261.7561ms
+[2022-09-28 11:49:55.759 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 11:49:56.126 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 367.1280ms
+[2022-09-28 11:53:42.954 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 11:53:45.890 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:53:48.121 +06:00  INF]  Executed DbCommand (161ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 11:53:49.222 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 11:53:49.222 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 11:53:49.223 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 11:53:49.223 +06:00  INF]  Hosting environment: Development
+[2022-09-28 11:53:49.223 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 11:53:52.123 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 11:53:53.482 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 1365.5119ms
+[2022-09-28 11:53:53.534 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 11:53:53.547 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 12.2939ms
+[2022-09-28 11:53:54.769 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 11:53:55.067 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 325.8703ms
+[2022-09-28 11:54:15.901 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 49
+[2022-09-28 11:54:15.921 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 11:54:17.176 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:54:17.224 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-28 11:54:17.317 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:55:20.439 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 63197.4647ms
+[2022-09-28 11:55:20.453 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:55:20.462 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'UserManager<IdentityUser>' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Authorization_System.API.Repositories.Base.BaseRepository`1.GetAll() in D:\Authorization_System\Authorization_System\Authorization_System.API\Repositories\Base\BaseRepository.cs:line 29
+   at Authorization_System.API.Services.ApplicationUserService.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Services\ApplicationUserService.cs:line 27
+   at Authorization_System.API.Controllers.AuthenticateController.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Controllers\AuthenticateController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 11:55:21.749 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 49 - 500 - text/plain;+charset=utf-8 65847.5796ms
+[2022-09-28 11:55:53.371 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 49
+[2022-09-28 11:55:53.379 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 11:55:53.381 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:55:53.381 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-28 11:55:53.411 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:56:38.676 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 45294.315ms
+[2022-09-28 11:56:38.680 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:56:38.687 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'UserManager<IdentityUser>' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Authorization_System.API.Repositories.Base.BaseRepository`1.GetAll() in D:\Authorization_System\Authorization_System\Authorization_System.API\Repositories\Base\BaseRepository.cs:line 29
+   at Authorization_System.API.Services.ApplicationUserService.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Services\ApplicationUserService.cs:line 27
+   at Authorization_System.API.Controllers.AuthenticateController.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Controllers\AuthenticateController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 11:56:38.697 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 49 - 500 - text/plain;+charset=utf-8 45325.6040ms
+[2022-09-28 11:59:09.353 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 11:59:12.589 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:59:15.305 +06:00  INF]  Executed DbCommand (269ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 11:59:16.234 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 11:59:16.234 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 11:59:16.235 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 11:59:16.235 +06:00  INF]  Hosting environment: Development
+[2022-09-28 11:59:16.235 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 11:59:19.386 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 11:59:20.254 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 11:59:20.273 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 15.9306ms
+[2022-09-28 11:59:20.276 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 898.7250ms
+[2022-09-28 11:59:21.681 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 11:59:21.942 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 260.9448ms
+[2022-09-28 11:59:29.705 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50
+[2022-09-28 11:59:29.718 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 11:59:29.880 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:59:29.933 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-28 11:59:30.031 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 11:59:51.561 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 21615.404ms
+[2022-09-28 11:59:51.569 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 11:59:51.580 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'User' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Authorization_System.API.Repositories.Base.BaseRepository`1.GetAll() in D:\Authorization_System\Authorization_System\Authorization_System.API\Repositories\Base\BaseRepository.cs:line 29
+   at Authorization_System.API.Services.ApplicationUserService.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Services\ApplicationUserService.cs:line 27
+   at Authorization_System.API.Controllers.AuthenticateController.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Controllers\AuthenticateController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 11:59:51.752 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50 - 500 - text/plain;+charset=utf-8 22046.9562ms
+[2022-09-28 12:15:19.827 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 12:15:21.772 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 12:15:24.755 +06:00  INF]  Executed DbCommand (286ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 12:15:25.840 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 12:15:25.840 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 12:15:25.841 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 12:15:25.841 +06:00  INF]  Hosting environment: Development
+[2022-09-28 12:15:25.841 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 12:15:27.958 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 12:15:28.765 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 811.7647ms
+[2022-09-28 12:15:28.922 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 12:15:28.941 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 18.4584ms
+[2022-09-28 12:15:29.787 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 12:15:30.044 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.0681ms
+[2022-09-28 12:15:36.726 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50
+[2022-09-28 12:15:36.741 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 12:15:36.887 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 12:15:36.933 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-28 12:15:37.013 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 12:16:20.731 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 43779.2415ms
+[2022-09-28 12:16:20.752 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 12:16:20.765 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'AspNetUsers' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Authorization_System.API.Repositories.Base.BaseRepository`1.GetAll() in D:\Authorization_System\Authorization_System\Authorization_System.API\Repositories\Base\BaseRepository.cs:line 29
+   at Authorization_System.API.Services.ApplicationUserService.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Services\ApplicationUserService.cs:line 27
+   at Authorization_System.API.Controllers.AuthenticateController.Login(LoginModel model) in D:\Authorization_System\Authorization_System\Authorization_System.API\Controllers\AuthenticateController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 12:16:21.078 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50 - 500 - text/plain;+charset=utf-8 44349.2419ms
+[2022-09-28 12:19:33.412 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 12:19:35.788 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 12:19:38.091 +06:00  INF]  Executed DbCommand (199ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 12:19:39.048 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 12:19:39.048 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 12:19:39.049 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 12:19:39.049 +06:00  INF]  Hosting environment: Development
+[2022-09-28 12:19:39.049 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 12:19:42.187 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 12:19:43.032 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 12:19:43.048 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 14.2465ms
+[2022-09-28 12:19:43.098 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 921.8271ms
+[2022-09-28 12:19:45.059 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 12:19:45.335 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 276.6007ms
+[2022-09-28 12:19:52.922 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50
+[2022-09-28 12:19:52.932 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 12:19:53.109 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 12:19:53.159 +06:00  INF]  Route matched with {action = "Login", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Authorization_System.API.Models.LoginModel) on controller Authorization_System.API.Controllers.AuthenticateController (Authorization_System.API).
+[2022-09-28 12:19:53.255 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 12:20:01.841 +06:00  INF]  Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 12:20:28.449 +06:00  INF]  Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 12:20:28.482 +06:00  INF]  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[2022-09-28 12:20:28.501 +06:00  INF]  Executed action Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API) in 35332.8714ms
+[2022-09-28 12:20:28.504 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.AuthenticateController.Login (Authorization_System.API)'
+[2022-09-28 12:20:28.523 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/Authenticate/login application/json 50 - 401 - application/problem+json;+charset=utf-8 35600.9662ms
+[2022-09-28 14:02:51.740 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:02:53.971 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:02:56.293 +06:00  INF]  Executed DbCommand (396ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:02:57.325 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:02:57.326 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:02:57.326 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:02:57.326 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:02:57.326 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:03:01.158 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:03:02.592 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 1438.9131ms
+[2022-09-28 14:03:03.297 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:03:03.309 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 11.6002ms
+[2022-09-28 14:03:03.827 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:03:04.086 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 259.1735ms
+[2022-09-28 14:04:18.375 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:04:20.969 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:04:32.427 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:04:34.427 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:04:36.483 +06:00  INF]  Executed DbCommand (204ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:04:38.137 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:04:38.138 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:04:38.138 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:04:38.138 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:04:38.138 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:04:39.945 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:04:40.928 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 990.9038ms
+[2022-09-28 14:04:40.946 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:04:40.975 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 28.7647ms
+[2022-09-28 14:04:41.653 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:04:41.940 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 286.5394ms
+[2022-09-28 14:05:11.849 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 14:05:12.974 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 14:05:12.998 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 14:05:13.098 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:05:13.192 +06:00  INF]  Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 14:05:13.215 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 14:05:13.244 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 236.9668ms
+[2022-09-28 14:05:13.245 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 14:05:13.260 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 1410.9495ms
+[2022-09-28 14:05:49.232 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=580205b2-1560-4672-a0be-a79e79bc2f5f - 0
+[2022-09-28 14:05:49.277 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 14:05:49.278 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 14:05:49.341 +06:00  INF]  Route matched with {action = "RemoveUser", controller = "UserOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveUser(System.Guid) on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 14:05:49.371 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:08:23.819 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:08:25.550 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:08:27.545 +06:00  INF]  Executed DbCommand (175ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:08:28.543 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:08:28.543 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:08:28.544 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:08:28.544 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:08:28.544 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:08:30.320 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:08:31.250 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:08:31.265 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 12.2339ms
+[2022-09-28 14:08:31.285 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 973.9254ms
+[2022-09-28 14:08:31.954 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:08:32.169 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 14:08:32.390 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 435.3440ms
+[2022-09-28 14:09:36.094 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:09:38.665 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:09:40.900 +06:00  INF]  Executed DbCommand (188ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:09:41.892 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:09:41.892 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:09:41.893 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:09:41.893 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:09:41.893 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:09:45.461 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:09:46.062 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:09:46.080 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 16.2603ms
+[2022-09-28 14:09:46.086 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 631.6346ms
+[2022-09-28 14:09:46.810 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:09:46.991 +06:00  ERR]  An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2022-09-28 14:09:47.095 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 285.0687ms
+[2022-09-28 14:11:04.137 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:11:06.222 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:11:09.921 +06:00  INF]  Executed DbCommand (216ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:11:11.008 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:11:11.008 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:11:11.008 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:11:11.008 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:11:11.008 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:11:12.989 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:11:14.154 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:11:14.173 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 15.7084ms
+[2022-09-28 14:11:14.206 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 1225.3229ms
+[2022-09-28 14:11:14.986 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:11:15.347 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 361.2528ms
+[2022-09-28 14:11:33.225 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=580205b2-1560-4672-a0be-a79e79bc2f5f - 0
+[2022-09-28 14:11:33.237 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 14:11:33.398 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 14:11:33.441 +06:00  INF]  Route matched with {action = "RemoveUser", controller = "UserOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveUser(System.Guid) on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 14:11:33.533 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:27:11.071 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 14:27:12.917 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:27:14.920 +06:00  INF]  Executed DbCommand (229ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 14:27:15.893 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 14:27:15.893 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 14:27:15.894 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 14:27:15.894 +06:00  INF]  Hosting environment: Development
+[2022-09-28 14:27:15.894 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 14:27:18.417 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 14:27:19.207 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 14:27:19.220 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 10.9518ms
+[2022-09-28 14:27:19.224 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 815.9064ms
+[2022-09-28 14:27:20.104 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 14:27:20.378 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.0615ms
+[2022-09-28 14:28:38.502 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=580205b2-1560-4672-a0be-a79e79bc2f5f - 0
+[2022-09-28 14:28:38.551 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 14:28:39.118 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 14:28:39.202 +06:00  INF]  Route matched with {action = "RemoveUser", controller = "UserOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveUser(System.Guid) on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 14:28:39.339 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:29:17.818 +06:00  INF]  Executed DbCommand (18ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+[2022-09-28 14:30:29.510 +06:00  INF]  Executed DbCommand (292ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetUsers]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+[2022-09-28 14:30:35.663 +06:00  INF]  Executing OkObjectResult, writing value of type 'Authorization_System.API.Models.Response'.
+[2022-09-28 14:30:35.785 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API) in 116575.1959ms
+[2022-09-28 14:30:35.796 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 14:30:35.818 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=580205b2-1560-4672-a0be-a79e79bc2f5f - 0 - 200 - application/json;+charset=utf-8 117317.4870ms
+[2022-09-28 14:30:46.664 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 14:30:46.675 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 14:30:46.677 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 14:30:46.696 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 14:30:46.715 +06:00  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 14:30:46.719 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 14:30:46.745 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 67.4969ms
+[2022-09-28 14:30:46.745 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 14:30:46.745 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 81.3447ms
+[2022-09-28 15:37:06.953 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 15:37:09.864 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 15:37:12.319 +06:00  INF]  Executed DbCommand (236ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 15:37:12.655 +06:00  INF]  Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 15:37:13.131 +06:00  INF]  Executed DbCommand (51ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+[2022-09-28 15:37:13.254 +06:00  INF]  Executed DbCommand (39ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 15:37:13.297 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 15:37:13.301 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 15:37:13.323 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 15:37:13.379 +06:00  INF]  Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+[2022-09-28 15:37:13.390 +06:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 15:37:13.419 +06:00  INF]  Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 15:37:13.465 +06:00  INF]  Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+[2022-09-28 15:37:13.491 +06:00  INF]  Executed DbCommand (17ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+[2022-09-28 15:37:13.503 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 15:37:13.506 +06:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 15:37:13.511 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+[2022-09-28 15:37:13.549 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 15:37:13.554 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 15:37:13.559 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+[2022-09-28 15:37:13.565 +06:00  INF]  Executed DbCommand (6ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+[2022-09-28 15:37:14.286 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 15:37:14.286 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 15:37:14.286 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 15:37:14.286 +06:00  INF]  Hosting environment: Development
+[2022-09-28 15:37:14.286 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 15:37:17.666 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 15:37:18.721 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 15:37:18.722 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 1059.9744ms
+[2022-09-28 15:37:18.756 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 34.8923ms
+[2022-09-28 15:37:20.041 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 15:37:20.290 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.6623ms
+[2022-09-28 15:38:34.039 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 15:38:34.224 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 15:38:34.247 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 15:38:34.343 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 15:38:34.380 +06:00  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 15:38:34.403 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 15:38:34.431 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 172.2734ms
+[2022-09-28 15:38:34.432 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 15:38:34.449 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 410.4465ms
+[2022-09-28 15:39:27.574 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=e7d7e40f-ca5b-4780-a522-65fdd92e22f4 - 0
+[2022-09-28 15:39:27.585 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 15:39:27.586 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 15:39:27.608 +06:00  INF]  Route matched with {action = "RemoveUser", controller = "UserOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveUser(System.Guid) on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 15:39:27.621 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 15:40:04.179 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+[2022-09-28 15:40:20.944 +06:00  INF]  Executed DbCommand (69ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetUsers]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+[2022-09-28 15:40:47.041 +06:00  INF]  Executing OkObjectResult, writing value of type 'Authorization_System.API.Models.Response'.
+[2022-09-28 15:40:47.059 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API) in 79451.4656ms
+[2022-09-28 15:40:47.062 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.RemoveUser (Authorization_System.API)'
+[2022-09-28 15:40:47.075 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/UserOperation/RemoveUser?Id=e7d7e40f-ca5b-4780-a522-65fdd92e22f4 - 0 - 200 - application/json;+charset=utf-8 79494.9530ms
+[2022-09-28 15:41:18.723 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 15:41:18.737 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 15:41:18.743 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 15:41:18.750 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 15:41:18.754 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 15:41:18.756 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 15:41:18.757 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 13.2901ms
+[2022-09-28 15:41:18.757 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 15:41:18.757 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 34.6242ms
+[2022-09-28 16:27:49.018 +06:00  INF]  User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-28 16:27:51.232 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 16:27:53.356 +06:00  INF]  Executed DbCommand (238ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 16:27:53.501 +06:00  INF]  Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 16:27:54.042 +06:00  INF]  Executed DbCommand (132ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+[2022-09-28 16:27:54.152 +06:00  INF]  Executed DbCommand (28ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 16:27:54.196 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 16:27:54.198 +06:00  INF]  Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 16:27:54.217 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 16:27:54.288 +06:00  INF]  Executed DbCommand (23ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+[2022-09-28 16:27:54.300 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 16:27:54.331 +06:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 16:27:54.401 +06:00  INF]  Executed DbCommand (33ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+[2022-09-28 16:27:54.428 +06:00  INF]  Executed DbCommand (18ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+[2022-09-28 16:27:54.439 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+[2022-09-28 16:27:54.442 +06:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 16:27:54.486 +06:00  INF]  Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+[2022-09-28 16:27:54.487 +06:00  INF]  Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+[2022-09-28 16:27:54.491 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+[2022-09-28 16:27:54.501 +06:00  INF]  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+[2022-09-28 16:27:54.507 +06:00  INF]  Executed DbCommand (6ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+[2022-09-28 16:27:55.156 +06:00  INF]  Now listening on: https://localhost:7190
+[2022-09-28 16:27:55.156 +06:00  INF]  Now listening on: http://localhost:5190
+[2022-09-28 16:27:55.156 +06:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-28 16:27:55.157 +06:00  INF]  Hosting environment: Development
+[2022-09-28 16:27:55.157 +06:00  INF]  Content root path: D:\Authorization_System\Authorization_System\Authorization_System.API\
+[2022-09-28 16:27:57.445 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/index.html - -
+[2022-09-28 16:27:58.217 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/index.html - - - 200 - text/html;charset=utf-8 776.9400ms
+[2022-09-28 16:27:58.277 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - -
+[2022-09-28 16:27:58.292 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 15.0582ms
+[2022-09-28 16:27:58.897 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - -
+[2022-09-28 16:27:59.204 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 306.9909ms
+[2022-09-28 16:28:28.582 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 16:28:28.767 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 16:28:28.792 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 16:28:28.873 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 16:28:28.923 +06:00  INF]  Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 16:28:28.942 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 16:28:28.969 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 166.7072ms
+[2022-09-28 16:28:28.970 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 16:28:28.988 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 406.1122ms
+[2022-09-28 16:30:59.936 +06:00  INF]  Request starting HTTP/2 POST https://localhost:7190/api/UserOperation/UpdateeUser application/json 203
+[2022-09-28 16:31:00.036 +06:00  INF]  No CORS policy found for the specified request.
+[2022-09-28 16:31:00.049 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.UpdateUser (Authorization_System.API)'
+[2022-09-28 16:31:00.141 +06:00  INF]  Route matched with {action = "UpdateUser", controller = "UserOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateUser(Authorization_System.API.Models.User) on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 16:31:00.187 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 16:32:00.915 +06:00  INF]  Executed DbCommand (123ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+[2022-09-28 16:32:52.444 +06:00  INF]  Executed DbCommand (75ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+[2022-09-28 16:32:58.260 +06:00  INF]  Executing OkObjectResult, writing value of type 'Authorization_System.API.Models.Response'.
+[2022-09-28 16:32:58.365 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.UpdateUser (Authorization_System.API) in 118223.7678ms
+[2022-09-28 16:32:58.366 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.UpdateUser (Authorization_System.API)'
+[2022-09-28 16:32:58.371 +06:00  INF]  Request finished HTTP/2 POST https://localhost:7190/api/UserOperation/UpdateeUser application/json 203 - 200 - application/json;+charset=utf-8 118438.7468ms
+[2022-09-28 16:33:15.584 +06:00  INF]  Request starting HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - -
+[2022-09-28 16:33:15.594 +06:00  INF]  Executing endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 16:33:15.594 +06:00  INF]  Route matched with {action = "GetAllUsers", controller = "UserOperation"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Microsoft.AspNetCore.Identity.IdentityUser] GetAllUsers() on controller Authorization_System.API.Controllers.UserOperationController (Authorization_System.API).
+[2022-09-28 16:33:15.599 +06:00  INF]  Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None
+[2022-09-28 16:33:15.612 +06:00  INF]  Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+[2022-09-28 16:33:15.613 +06:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+[2022-09-28 16:33:15.615 +06:00  INF]  Executed action Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API) in 20.7547ms
+[2022-09-28 16:33:15.615 +06:00  INF]  Executed endpoint 'Authorization_System.API.Controllers.UserOperationController.GetAllUsers (Authorization_System.API)'
+[2022-09-28 16:33:15.616 +06:00  INF]  Request finished HTTP/2 GET https://localhost:7190/api/UserOperation/GetAllUsers - - - 200 - application/json;+charset=utf-8 31.4477ms
