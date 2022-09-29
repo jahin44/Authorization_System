@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Serilog;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Authorization_System.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserOperationController : Controller
@@ -18,6 +20,7 @@ namespace Authorization_System.API.Controllers
             _userOperationService = userOperationService;
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [HttpGet]
         [Route("GetAllUsers")]
         public IEnumerable<IdentityUser> GetAllUsers()
@@ -34,6 +37,7 @@ namespace Authorization_System.API.Controllers
 
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [HttpPost]
         [Route("RemoveUser")]
         public IActionResult RemoveUser(Guid Id)
