@@ -44,14 +44,9 @@
           <a
             class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
             href="#"
+            v-on:click="SignUp"
           >
-            Forgot Password?
-          </a>
-          <a
-            class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-            href="#"
-          >
-            Register
+           Sign Up
           </a>
         </div>
       </form>
@@ -74,6 +69,9 @@ export default {
     };
   },
   methods: {
+    SignUp(){
+      this.$router.push({name:'SignUp'});
+    },
     async loginAsync() {
       let result = await axios.post(
         "https://localhost:7190/api/Authenticate/login",

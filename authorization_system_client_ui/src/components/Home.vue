@@ -1,8 +1,23 @@
 <template>
   <div class="container mx-auto px-4 sm:px-8">
     <div class="py-8">
-      <div>
-        <h2 class="text-2xl font-semibold leading-tight">Product Details</h2>
+      <div class="grid grid-cols-6 gap-2">
+        <div class="col-start-1 col-end-3">
+          <h2 class="text-2xl font-semibold leading-tight ">Product Details</h2>
+        </div>
+        <div class="col-end-7 col-span-2 inline-grid grid-cols-2 gap-2">
+          <button
+            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full "
+          >
+            {{this.UserName}} 
+          </button>
+          <button
+            class=" bg-blue-400 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+            v-on:click="logOut"
+          >
+            LogOut
+          </button>
+        </div>
       </div>
       <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
         <div
@@ -131,7 +146,6 @@
                 >
                   ImagePath
                 </th>
-                
               </tr>
             </thead>
             <tbody>
@@ -256,7 +270,6 @@
                     {{ product.ImagePath }}
                   </p>
                 </td>
-                
               </tr>
             </tbody>
           </table>
@@ -270,13 +283,21 @@ import "@/assets/tailwind.css";
 import axios from "axios";
 
 export default {
-  name: "ProductDetails",
+  name: "WelCome",
   data() {
     return {
       productList: [],
+      UserName: "",
     };
   },
   methods: {
+    logOut(){
+      console.log()
+        localStorage.removeItem("Token");
+         localStorage.removeItem("UserName");
+        this.$router.push({name:'Login'})
+
+    },
     async GetProductsAsync() {
       await axios
         .get("https://www.pqstec.com/InvoiceApps/values/GetProductListAll")
@@ -294,13 +315,13 @@ export default {
   },
   mounted() {
     let token = localStorage.getItem("Token");
+    this.UserName = localStorage.getItem("UserName");
+    this.UserName = this.UserName.replace(/['"]+/g, '').toUpperCase();
     if (token != null) {
       this.$router.push({ name: "Home" });
       this.GetProductsAsync();
-    }
-    else{
+    } else {
       this.$router.push({ name: "Login" });
-
     }
   },
 };
