@@ -8,6 +8,7 @@
         <div class="col-end-7 col-span-2 inline-grid grid-cols-2 gap-2">
           <button
             class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full "
+            v-on:click="UserDetail"
           >
             {{this.UserName}} 
           </button>
@@ -291,11 +292,14 @@ export default {
     };
   },
   methods: {
+    UserDetail(){
+      this.$router.push({name:'UserDetail'});
+    },
     logOut(){
       console.log()
         localStorage.removeItem("Token");
          localStorage.removeItem("UserName");
-        this.$router.push({name:'Login'})
+        this.$router.push({name:'Login'});
 
     },
     async GetProductsAsync() {
