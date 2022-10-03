@@ -18,10 +18,25 @@ namespace Authorization_System.API.Services
         }
 
 
-        public List<IdentityUser> GetAll()
+        public List<User> GetAll()
         {
 
-            return (List<IdentityUser>)_userRepository.GetAll();
+            var allIdentity = (List<IdentityUser>)_userRepository.GetAll();
+            List<User> allUser = new List<User>();
+
+            foreach (var i in allIdentity)
+            {
+                var user = new User();
+                user.Id = Guid.Parse(i.Id);
+                user.UserName = i.UserName;
+                user.Email = i.Email;
+                user.PhoneNumber = i.PhoneNumber;
+                user.EmailConfirmed = i.EmailConfirmed;
+                allUser.Add(user);
+
+            }
+
+            return allUser;
         }
 
         public IdentityUser GetById(Guid Id)
@@ -32,6 +47,48 @@ namespace Authorization_System.API.Services
             }
 
             return _userRepository.GetById(Id);
+        }
+        public User GetByName(string userName)
+        {
+
+            if (userName == null)
+            {
+                throw new FileNotFoundException("User not found with the user id");
+            }
+            var allUser = GetAll();
+            var user = new User();
+            foreach (var i in allUser)
+            {
+                if (i.UserName == userName)
+                {
+
+                    user.Id = i.Id;
+                    user.UserName = i.UserName;
+                    user.Email = i.Email;
+                    user.PhoneNumber = i.PhoneNumber;
+                    user.EmailConfirmed = i.EmailConfirmed;
+
+                }
+
+            }
+
+            return user;
+        }
+
+        public List<User> GetUserById(string Id)
+        {
+             var allIdentity =GetById(new Guid(Id));
+            List<User> allUser = new List<User>();
+
+                var user = new User();
+                user.Id = Guid.Parse(allIdentity.Id);
+                user.UserName = allIdentity.UserName;
+                user.Email = allIdentity.Email;
+                user.PhoneNumber = allIdentity.PhoneNumber;
+                user.EmailConfirmed = allIdentity.EmailConfirmed;
+                allUser.Add(user);
+
+                return allUser;
         }
 
         public void Remove(Guid Id)
@@ -51,7 +108,7 @@ namespace Authorization_System.API.Services
                 throw new FileNotFoundException("User not found ");
             }
 
-            var userExists =await _userManager.FindByNameAsync(user.UserName);
+            var userExists = await _userManager.FindByNameAsync(user.UserName);
             if (userExists == null)
             {
                 var OldUser = _userRepository.GetById(user.Id);

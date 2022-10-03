@@ -14,10 +14,7 @@ namespace Authorization_System.API.Repositories.Base
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
         }
-        public virtual void AddAsync(TEntity entity)
-        {
-             _dbSet.AddAsync(entity);
-        }
+        
         public virtual IList<TEntity> GetAll()
         {
             return _dbSet.ToList();
@@ -47,5 +44,6 @@ namespace Authorization_System.API.Repositories.Base
             _dbSet.Update(entity);
             _dbContext.SaveChanges();
         }
+
     }
 }
